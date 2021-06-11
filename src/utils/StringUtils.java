@@ -9,7 +9,7 @@ public class StringUtils {
         String[] numbers = (text.trim()).split("\\D+");
         int sum = 0;
         for (String number : numbers)
-            sum += !number.isEmpty() ? Integer.parseInt(number.trim()) : 0;
+            sum += number.isEmpty() ? 0 : Integer.parseInt(number.trim());
         return sum;
     }
 

@@ -68,9 +68,7 @@ public class Main {
         //<editor-fold defaultstate="collapsed" desc=" Exercise 6 ">
         System.out.println("\nExercise 6 :\n");
 
-        GenericArrayUtils<Integer> genericArrayUtil = new GenericArrayUtils<>();
-
-        genericArrayUtil.sortArray(intArray);
+        GenericArrayUtils.sortArray(intArray);
         Arrays.stream(intArray).forEach(x -> System.out.print(x + " ")); // System.out::println
         System.out.println();
         //</editor-fold>
@@ -78,7 +76,7 @@ public class Main {
         //<editor-fold defaultstate="collapsed" desc=" Exercise 7 ">
         System.out.println("\nExercise 7 :\n");
 
-        System.out.println(genericArrayUtil.getElementByIndex(Arrays.asList(intArray), 5));
+        System.out.println(GenericArrayUtils.getElementByIndex(Arrays.asList(intArray), 5));
         //</editor-fold>
 
     }
